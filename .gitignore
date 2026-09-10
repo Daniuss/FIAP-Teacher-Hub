@@ -1,0 +1,45 @@
+# ---- Node / Expo / React Native ----
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+npm-debug.*
+yarn-error.*
+.metro-health-check*
+
+# macOS
+.DS_Store
+
+# Xcode / Android native (caso ejetado)
+mobile/ios/
+mobile/android/
+
+# ---- Python / FastAPI ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Ambiente / segredos ----
+.env
+.env.local
+.env.*.local
+backend/.env
+mobile/.env
+
+# ---- Editor / SO ----
+.vscode/
+.idea/
+Thumbs.db
