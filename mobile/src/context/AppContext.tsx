@@ -108,7 +108,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       }
     }
 
-    // Modo demo — mesma regra do mockup: usuário pf0000 + senha 1234
+    // Modo demo — mesma regra do preview: usuário pf0000 + senha 1234
     if (/^pf\d{4}$/i.test(usuario) && senha === '1234') {
       setProfessor(demoProfessor);
       setAccessToken('demo-token');

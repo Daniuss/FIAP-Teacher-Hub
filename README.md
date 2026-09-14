@@ -1,7 +1,7 @@
 # FIAP Teacher Hub — Mobile
 
 App mobile para professores da FIAP (substitui o portal do professor atual).
-Referência de telas, fluxos e dados de exemplo: [`mockup/index.html`](mockup/index.html).
+Referência de telas, fluxos e dados de exemplo: [`preview/index.html`](preview/index.html).
 
 ## Stack
 
@@ -14,7 +14,7 @@ Referência de telas, fluxos e dados de exemplo: [`mockup/index.html`](mockup/in
 
 ```
 .
-├── mockup/           # index.html original (fonte da verdade visual/funcional)
+├── preview/          # index.html original (fonte da verdade visual/funcional)
 ├── mobile/           # app Expo (React Native)
 ├── backend/          # API FastAPI
 │   └── supabase/     # schema.sql e seed.sql

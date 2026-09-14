@@ -1,4 +1,4 @@
-// Dados de demonstração — espelham exatamente mockup/index.html (Prof. Marcos Silva).
+// Dados de demonstração — espelham exatamente preview/index.html (Prof. Marcos Silva).
 // Usados como estado inicial das telas; nas ações de escrita (enviar chamado,
 // responder chat, novo aviso, solicitação) o app tenta a API real (ver src/api/client.ts)
 // e cai para atualização local otimista quando a API não está configurada.
@@ -417,7 +417,7 @@ export const solicitacoes: Solicitacao[] = [
 
 export const setores: SetorKey[] = ['TI', 'Audiovisual', 'Infraestrutura', 'Coordenação'];
 
-// Aulas por dia do calendário (Agenda) — igual ao aDB do mockup, ano de referência 2026.
+// Aulas por dia do calendário (Agenda) — igual ao aDB do preview, ano de referência 2026.
 export interface AulaAgenda {
   h: string;
   n: string;

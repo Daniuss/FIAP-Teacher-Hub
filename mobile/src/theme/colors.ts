@@ -1,4 +1,4 @@
-// Extraído 1:1 das variáveis CSS do mockup/index.html
+// Extraído 1:1 das variáveis CSS do preview/index.html
 export const colors = {
   fiap: '#D81B60',
 

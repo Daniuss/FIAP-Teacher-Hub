@@ -1,5 +1,5 @@
 -- FIAP Teacher Hub — seed de dados (Prof. Marcos Silva)
--- Espelha fielmente os dados de exemplo do mockup/index.html.
+-- Espelha fielmente os dados de exemplo do preview/index.html.
 -- Rodar depois de schema.sql.
 --
 -- Observação: para o professor de teste logar de fato via Supabase Auth,
@@ -21,7 +21,7 @@ insert into professores (id, nome, email, matricula, usuario, unidades) values
 
 -- =========================================================
 -- TURMAS
--- (as 4 citadas no briefing + as demais 2 exibidas na tela Turmas do mockup)
+-- (as 4 citadas no briefing + as demais 2 exibidas na tela Turmas do preview)
 -- =========================================================
 insert into turmas (id, nome, codigo, unidade, sala, andar, horario, dias_semana, professor_id) values
 ('10000000-0000-0000-0000-000000000001', 'Eng. de Software',        '1TDSB', 'Lins',     '305', '3º andar', '08h–10h', '{"Seg","Qua"}', '00000000-0000-0000-0000-000000000001'),
@@ -41,7 +41,7 @@ insert into alunos (id, nome, rm, turma_id) values
 ('20000000-0000-0000-0000-000000000004', 'Carlos Mendes',   'RM-90004', '10000000-0000-0000-0000-000000000001');
 
 -- =========================================================
--- AULAS (agenda — semana de referência do mockup, Junho/2026)
+-- AULAS (agenda — semana de referência do preview, Junho/2026)
 -- =========================================================
 insert into aulas (turma_id, data, horario_inicio, horario_fim, sala, tipo) values
 ('10000000-0000-0000-0000-000000000001', '2026-06-09', '08:00', '10:00', '305', 'normal'),

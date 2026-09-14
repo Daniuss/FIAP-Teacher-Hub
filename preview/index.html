@@ -473,7 +473,7 @@ body { font-family: var(--font-sans); background: #0a0a0a; display: flex; align-
 <script>
 var eyeMOn=false;
 function toggleEyeM(){eyeMOn=!eyeMOn;document.getElementById('input-pass').type=eyeMOn?'text':'password';document.getElementById('eye-m-ic').className=eyeMOn?'ti ti-eye':'ti ti-eye-off';}
-function tentarLogin(){var u=document.getElementById('input-user').value.trim(),p=document.getElementById('input-pass').value.trim();var err=document.getElementById('error-msg'),btn=document.getElementById('login-btn');if(/^pf\d{4}$/i.test(u)&&p==='1234'){err.classList.remove('show');btn.textContent='✓ Conectando...';btn.style.background='#1a8a4a';setTimeout(function(){goTo('dashboard');btn.textContent='Conectar';btn.style.background='';},600);}else{err.classList.add('show');document.getElementById('input-user').classList.add('error');document.getElementById('input-pass').classList.add('error');}}
+function tentarLogin(){var err=document.getElementById('error-msg'),btn=document.getElementById('login-btn');err.classList.remove('show');btn.textContent='✓ Conectando...';btn.style.background='#1a8a4a';setTimeout(function(){goTo('dashboard');btn.textContent='Conectar';btn.style.background='';},600);}
 document.addEventListener('keydown',function(e){if(e.key==='Enter')tentarLogin();});
 function goTo(s){document.querySelectorAll('.screen').forEach(function(x){x.classList.remove('active');});document.getElementById('screen-'+s).classList.add('active');document.querySelectorAll('.overlay').forEach(function(o){o.classList.remove('open');});if(s==='agenda')renderCal();}
 function openOverlay(id){document.getElementById('overlay-'+id).classList.add('open');}

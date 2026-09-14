@@ -119,7 +119,7 @@ create index idx_timeline_chamado on chamados_timeline(chamado_id, created_at);
 -- =========================================================
 -- MENSAGENS (chat professor <-> aluno)
 -- remetente foi adicionado além das colunas pedidas, necessário para
--- reconstruir a conversa nos dois sentidos como no mockup.
+-- reconstruir a conversa nos dois sentidos como no preview.
 -- =========================================================
 create table mensagens (
   id            uuid primary key default gen_random_uuid(),
